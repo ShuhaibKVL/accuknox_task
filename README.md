@@ -1,4 +1,3 @@
-Understood. Here is the `README.md` file with your provided content, formatted for clarity:
 
 ```markdown
 # React + Vite
