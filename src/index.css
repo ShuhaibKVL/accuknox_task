@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --chart-2: 220,94%,55%;
+    --chart-3: 220 100% 79%;
+    --chart-4: 0, 100%, 50%;
+    --chart-5: 132, 98%, 26%;
+    --chart-6: 52, 100%, 50%;
+    --chart-7: 27 87% 67%;
+  }
+  /* --chart-2 blue
+  --chart-3 light blue
+  --chart-4: red
+  --char-5: green
+  --char-6: yellow
+  --char-7:
+  */
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+/* Override ShadCN toast styles */
+.toast {
+  background-color: white !important;
+  color: red !important;
+}
+
+.toast-success {
+  background-color: white !important;
+  color: red !important;
+}
+
+.toast-error {
+  background-color: white !important;
+  color: red !important;
+}
+

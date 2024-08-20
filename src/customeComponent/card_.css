@@ -1,0 +1,14 @@
+.className{
+    font-size: 14px;
+}
+
+.addButton{
+    border: 2px solid rgb(145, 145, 145);
+    border-radius: 2px;
+}
+
+/* .className{
+    max-width: 400px;
+    min-width: 100px;
+} */
+
