@@ -9,8 +9,12 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { toast } from '@/components/ui/use-toast';
+import { useDispatch } from 'react-redux';
+import { updateCategory } from '@/features/widgetSlice';
 
 export default function CustomForm({onClose}) {
+
+  const dispatch = useDispatch()
 
   const [formData, setFormData] = useState({
     name: '',
@@ -46,9 +50,26 @@ export default function CustomForm({onClose}) {
     });
     return;
   }
-    // Handle form submission logic here
-    console.log('Form Data:', formData);
-    onClose()
+
+  // Dispatch the update action
+  dispatch(updateCategory({
+    categoryName: formData.category,
+    newCategoryData: {
+        title: formData.name,
+        description: formData.description,
+    }
+  }));
+
+  toast({
+    title: "Success",
+    description: "Widget added to category collection",
+    variant: "success",
+    className: "toast toast-success",
+  });
+
+  onClose()
+  return
+
   };
 
   return (

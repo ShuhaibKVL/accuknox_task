@@ -33,13 +33,13 @@
   color: red !important;
 }
 
-.toast-success {
-  background-color: white !important;
-  color: red !important;
-}
-
 .toast-error {
   background-color: white !important;
   color: red !important;
 }
 
+.toast-success {
+  background-color: #ffffff !important; /* Green background */
+  color: rgb(14, 121, 0) !important; /* White text */
+  border-left: 5px solid #388e3c; /* Darker green border */
+}

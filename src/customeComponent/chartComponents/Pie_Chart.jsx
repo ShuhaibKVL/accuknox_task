@@ -43,6 +43,8 @@ const chartConfig = {
 
 export function Pie_Chart({widget}) {
   
+  console.log(" Pie_Chart :",widget);
+  
 
   const [widgetData , setWidgetData ] = React.useState(widget)
   const [ chartData , setChartData ] = React.useState(widgetData.data.datasets)
